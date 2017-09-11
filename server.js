@@ -42,7 +42,7 @@ function createTemplate(data) {
                         </body>
                         </html>`;
 
-    
+    return htmltemplate;
 }
 
 var articles= {
@@ -78,8 +78,9 @@ var articles= {
     }
 };
 
-app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+app.get('/;articleName', function (req, res) {
+    var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-two', function (req, res) {

@@ -46,7 +46,7 @@ function createTemplate(data) {
 }
 
 var articles= {
-    articleOne: {
+    'article-one': {
         title: 'Article One :Naveen Subramanian',
         heading: 'Article One',
         date: 'Sep 11 2017',
@@ -60,7 +60,7 @@ var articles= {
                     This is the content of the article one.This is the content of the article one.This is the content of the article one.This is the content of the article one.This is the content of the article one.This is the content of the article one.
                 </p>`
     },
-    articleTwo: {
+    'article-two': {
         title: 'Article Two :Naveen Subramanian',
         heading: 'Article Two',
         date: 'Sep 11 2017',
@@ -68,7 +68,7 @@ var articles= {
                     This is the content of the article two.This is the content of the article two.
                 </p>`
     },
-    articleThree: {
+   'article-three': {
         title: 'Article Three :Naveen Subramanian',
         heading: 'Article Three',
         date: 'Sep 11 2017',

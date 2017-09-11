@@ -45,7 +45,7 @@ function createTemplate(data) {
     return htmltemplate;
 }
 
-var articles= {
+var articles = {
     'article-one': {
         title: 'Article One :Naveen Subramanian',
         heading: 'Article One',
@@ -80,7 +80,7 @@ var articles= {
 
 app.get('/:articleName', function (req, res) {
     var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-two', function (req, res) {

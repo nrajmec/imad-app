@@ -102,8 +102,8 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 var names= [];
-app.get('/submit-name/:name', function (req, res) {
-    var name= req.params.name;
+app.get('/submit-name/:name', function (req, res) { //URL: /submit-name?name-xxxxxx
+    var name= req.query.name;
     names.push(name);
     //JSON Javascipt Object Notification
     res.send(JSON.stringify(names));
